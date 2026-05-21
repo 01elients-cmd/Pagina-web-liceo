@@ -1,0 +1,100 @@
+import { createClient } from '@/lib/supabase/server';
+import LibraryResourceManager from '@/components/dashboard/teacher/LibraryResourceManager';
+import Link from 'next/link';
+
+export const dynamic = 'force-dynamic';
+
+export default async function TeacherLibraryPage() {
+  const supabase = await createClient();
+
+  const {
+    data: { user },
+  } = await supabase.auth.getUser();
+
+  if (!user) {
+    return (
+      <div className="min-h-screen flex items-center justify-center bg-slate-50 text-slate-500">
+        Cargando sesión...
+      </div>
+    );
+  }
+
+  // Fetch Teacher profile
+  const { data: profile } = await supabase
+    .from('profiles')
+    .select('*')
+    .eq('id', user.id)
+    .single();
+
+  // Fetch subjects taught by this teacher
+  const { data: subjects } = await supabase
+    .from('subjects')
+    .select('*')
+    .eq('teacher_id', user.id)
+    .order('name', { ascending: true });
+
+  // Fetch all resources uploaded by this teacher
+  const { data: resources } = await supabase
+    .from('library_resources')
+    .select(`
+      id,
+      title,
+      description,
+      file_url,
+      created_at,
+      subjects (
+        id,
+        name,
+        grade_level
+      )
+    `)
+    .eq('teacher_id', user.id)
+    .order('created_at', { ascending: false });
+
+  return (
+    <div className="min-h-screen bg-slate-50 text-slate-800 font-sans pb-12">
+      {/* Top Navbar */}
+      <header className="bg-white border-b border-slate-200 sticky top-0 z-40">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            <Link href="/dashboard/teacher" className="h-8 w-8 rounded bg-slate-900 flex items-center justify-center text-white text-sm font-bold hover:bg-slate-800 transition-colors">
+              EV
+            </Link>
+            <span className="font-bold text-slate-900 tracking-tight text-md">Expediente Vargas</span>
+          </div>
+          <div className="flex items-center gap-4">
+            <Link
+              href="/dashboard/teacher"
+              className="text-xs font-semibold text-slate-500 hover:text-slate-900 transition-colors"
+            >
+              Volver al Panel
+            </Link>
+            <span className="text-xs font-semibold bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md uppercase tracking-wider">
+              Docente
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 space-y-8">
+        
+        {/* Workspace Title */}
+        <div className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm flex items-center justify-between">
+          <div>
+            <h1 className="text-xl font-bold text-slate-900">Biblioteca Virtual</h1>
+            <p className="text-sm text-slate-500 mt-0.5">
+              Gestione las guías de estudio, lecturas y recursos didácticos de sus asignaturas.
+            </p>
+          </div>
+        </div>
+
+        {/* Manager Workspace */}
+        <LibraryResourceManager
+          subjects={subjects || []}
+          initialResources={resources || []}
+        />
+
+      </main>
+    </div>
+  );
+}
