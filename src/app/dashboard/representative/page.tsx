@@ -3,6 +3,7 @@ import RepresentativeGradesView from '@/components/dashboard/representative/Repr
 import AnnouncementFeed from '@/components/dashboard/shared/AnnouncementFeed';
 import NotificationPanel from '@/components/dashboard/shared/NotificationPanel';
 import Link from 'next/link';
+import { logout } from '@/app/login/actions';
 
 export const dynamic = 'force-dynamic';
 
@@ -70,12 +71,14 @@ export default async function RepresentativeDashboard() {
             <span className="text-xs font-semibold bg-slate-100 text-slate-700 px-2.5 py-1 rounded-md uppercase tracking-wider">
               Representante
             </span>
-            <Link
-              href="/login"
-              className="text-xs font-semibold text-slate-500 hover:text-slate-900 transition-colors"
-            >
-              Cerrar Sesión
-            </Link>
+            <form action={logout}>
+              <button
+                type="submit"
+                className="text-xs font-semibold text-slate-500 hover:text-slate-900 transition-colors cursor-pointer bg-transparent border-0 p-0"
+              >
+                Cerrar Sesión
+              </button>
+            </form>
           </div>
         </div>
       </header>
