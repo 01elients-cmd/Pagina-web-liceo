@@ -85,7 +85,7 @@ export default function RepresentativeLibraryView({
             return (
               <div
                 key={res.id}
-                className="bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-xs hover:border-slate-350 transition-all flex flex-col justify-between overflow-hidden"
+                className="bg-white rounded-xl border border-slate-200 shadow-sm hover:shadow-xs hover:border-brand-blue/30 transition-all flex flex-col justify-between overflow-hidden"
               >
                 <div className="p-5 space-y-3">
                   <div className="flex items-center justify-between">

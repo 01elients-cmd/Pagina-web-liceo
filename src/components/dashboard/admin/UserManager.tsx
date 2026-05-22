@@ -93,7 +93,7 @@ export default function UserManager({
             placeholder="Buscar por nombre o correo electrónico..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
-            className="w-full pl-10 pr-4 py-2 border border-slate-350 rounded-lg text-sm focus:outline-hidden focus:ring-1 focus:ring-slate-900 focus:border-slate-900"
+            className="w-full pl-10 pr-4 py-2 border border-slate-200 rounded-lg text-sm focus:outline-hidden focus:ring-1 focus:ring-slate-900 focus:border-slate-900"
           />
         </div>
         <div className="text-xs text-slate-500 font-semibold">
@@ -140,7 +140,7 @@ export default function UserManager({
                           <select
                             value={editRole}
                             onChange={(e) => setEditRole(e.target.value)}
-                            className="bg-white border border-slate-355 text-xs rounded-md p-1.5 focus:outline-hidden focus:ring-1 focus:ring-slate-900"
+                            className="bg-white border border-slate-200 text-xs rounded-md p-1.5 focus:outline-hidden focus:ring-1 focus:ring-slate-900"
                           >
                             <option value="admin">Administrador</option>
                             <option value="teacher">Docente</option>
@@ -183,7 +183,7 @@ export default function UserManager({
                                 <select
                                   value={editGrade}
                                   onChange={(e) => setEditGrade(e.target.value)}
-                                  className="w-full bg-white border border-slate-355 text-xs rounded-md p-1.5 focus:outline-hidden focus:ring-1 focus:ring-slate-900"
+                                  className="w-full bg-white border border-slate-200 text-xs rounded-md p-1.5 focus:outline-hidden focus:ring-1 focus:ring-slate-900"
                                 >
                                   <option value="">Seleccione Grado...</option>
                                   <option value="1er Año">1er Año</option>
@@ -198,7 +198,7 @@ export default function UserManager({
                                 <select
                                   value={editRepId}
                                   onChange={(e) => setEditRepId(e.target.value)}
-                                  className="w-full bg-white border border-slate-355 text-xs rounded-md p-1.5 focus:outline-hidden focus:ring-1 focus:ring-slate-900"
+                                  className="w-full bg-white border border-slate-200 text-xs rounded-md p-1.5 focus:outline-hidden focus:ring-1 focus:ring-slate-900"
                                 >
                                   <option value="">Vincular Representante...</option>
                                   {representatives.map((r) => (
@@ -246,7 +246,7 @@ export default function UserManager({
                         ) : (
                           <button
                             onClick={() => handleEditClick(p)}
-                            className="text-xs font-semibold border border-slate-350 text-slate-700 px-3 py-1.5 rounded-lg hover:bg-slate-50 transition-colors"
+                            className="text-xs font-semibold border border-slate-200 text-slate-700 px-3 py-1.5 rounded-lg hover:bg-slate-50 transition-colors"
                           >
                             Modificar
                           </button>

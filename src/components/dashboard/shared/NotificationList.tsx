@@ -48,8 +48,8 @@ export default function NotificationList({
             key={notif.id}
             className={`p-4 rounded-xl border flex flex-col sm:flex-row sm:items-center justify-between gap-4 transition-all shadow-sm ${
               isFinancial
-                ? 'bg-rose-50 border-rose-200 text-rose-905'
-                : 'bg-indigo-50 border-indigo-200 text-indigo-905'
+                ? 'bg-rose-50 border-rose-200 text-rose-950'
+                : 'bg-indigo-50 border-indigo-200 text-indigo-950'
             }`}
           >
             <div className="flex gap-3 items-start">

@@ -118,19 +118,19 @@ export default async function TeacherDashboard() {
             <div className="flex flex-wrap gap-2">
               <Link
                 href="/dashboard/teacher/library"
-                className="text-xs font-semibold bg-white border border-slate-350 hover:bg-slate-50 text-slate-700 px-3.5 py-2 rounded-lg transition-colors"
+                className="text-xs font-semibold bg-white border border-slate-200 hover:border-brand-blue/30 text-slate-700 px-3.5 py-2 rounded-lg transition-colors shadow-xs"
               >
                 Biblioteca Virtual
               </Link>
               <Link
                 href="/dashboard/teacher/appointments"
-                className="text-xs font-semibold bg-white border border-slate-350 hover:bg-slate-50 text-slate-700 px-3.5 py-2 rounded-lg transition-colors"
+                className="text-xs font-semibold bg-white border border-slate-200 hover:border-brand-blue/30 text-slate-700 px-3.5 py-2 rounded-lg transition-colors shadow-xs"
               >
                 Agenda de Citas
               </Link>
               <Link
                 href="/dashboard/teacher/announcements"
-                className="text-xs font-semibold bg-white border border-slate-350 hover:bg-slate-50 text-slate-700 px-3.5 py-2 rounded-lg transition-colors"
+                className="text-xs font-semibold bg-white border border-slate-200 hover:border-brand-blue/30 text-slate-700 px-3.5 py-2 rounded-lg transition-colors shadow-xs"
               >
                 Crear Comunicados
               </Link>

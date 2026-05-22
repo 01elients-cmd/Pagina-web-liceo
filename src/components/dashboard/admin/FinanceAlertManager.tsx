@@ -58,7 +58,7 @@ export default function FinanceAlertManager({
       
       <div className="bg-slate-900 px-6 py-4 text-white">
         <h2 className="text-base font-bold">Generación de Alerta de Cobro</h2>
-        <p className="text-xs text-slate-350 mt-0.5">
+        <p className="text-xs text-slate-400 mt-0.5">
           Notifique inmediatamente al representante seleccionado sobre cuotas, mensualidades u obligaciones administrativas vencidas.
         </p>
       </div>
@@ -75,7 +75,7 @@ export default function FinanceAlertManager({
             value={selectedRepId}
             onChange={(e) => setSelectedRepId(e.target.value)}
             disabled={loading}
-            className="w-full bg-white border border-slate-355 rounded-lg p-2.5 text-sm focus:outline-hidden focus:ring-1 focus:ring-slate-900 focus:border-slate-900"
+            className="w-full bg-white border border-slate-200 rounded-lg p-2.5 text-sm focus:outline-hidden focus:ring-1 focus:ring-slate-900 focus:border-slate-900"
             required
           >
             <option value="">-- Seleccione el Representante a notificar --</option>
@@ -99,7 +99,7 @@ export default function FinanceAlertManager({
             onChange={(e) => setConcept(e.target.value)}
             disabled={loading}
             placeholder="Ej. Mensualidad escolar correspondiente al mes de Mayo 2026. Por favor acudir a caja."
-            className="w-full bg-white border border-slate-355 rounded-lg p-2.5 text-sm focus:outline-hidden focus:ring-1 focus:ring-slate-900 focus:border-slate-900"
+            className="w-full bg-white border border-slate-200 rounded-lg p-2.5 text-sm focus:outline-hidden focus:ring-1 focus:ring-slate-900 focus:border-slate-900"
             required
           />
         </div>
@@ -121,7 +121,7 @@ export default function FinanceAlertManager({
               onChange={(e) => setAmount(e.target.value)}
               disabled={loading}
               placeholder="0.00"
-              className="w-full pl-7 pr-4 py-2.5 border border-slate-355 rounded-lg text-sm focus:outline-hidden focus:ring-1 focus:ring-slate-900 focus:border-slate-900"
+              className="w-full pl-7 pr-4 py-2.5 border border-slate-200 rounded-lg text-sm focus:outline-hidden focus:ring-1 focus:ring-slate-900 focus:border-slate-900"
             />
           </div>
           <span className="block text-[10px] text-slate-400">

@@ -45,7 +45,7 @@ export default async function AnnouncementFeed() {
         <h2 className="text-md font-bold text-slate-900 tracking-tight">
           Tablón de Anuncios
         </h2>
-        <span className="text-[10px] font-bold text-slate-400 bg-slate-100 px-2 py-0.5 rounded uppercase tracking-wider">
+        <span className="text-[10px] font-bold text-slate-400 bg-slate-100 px-2.5 py-0.5 rounded-full uppercase tracking-wider">
           Oficial
         </span>
       </div>
@@ -59,32 +59,57 @@ export default async function AnnouncementFeed() {
           {list.map((ann: any) => (
             <div
               key={ann.id}
-              className="bg-white p-5 rounded-xl border border-slate-200 shadow-xs space-y-2 hover:border-slate-300 transition-colors"
+              className="bg-white p-5 rounded-2xl border border-slate-200/60 shadow-xs space-y-3 hover:border-brand-green/30 hover:shadow-md transition-all duration-300 relative overflow-hidden pl-6"
             >
-              <div className="flex items-center justify-between">
-                <div className="flex items-center gap-2">
-                  <span className="text-[9px] font-bold text-slate-700 bg-slate-100 px-2 py-0.5 rounded uppercase tracking-wider">
-                    {ann.author?.role === 'admin' ? 'Dirección' : 'Docente'}
-                  </span>
-                  <span className="text-[10px] font-semibold text-slate-600">
-                    {ann.author ? `${ann.author.first_name} ${ann.author.last_name}` : 'Sistema'}
-                  </span>
+              {/* Left role accent indicator bar */}
+              <div
+                className={`absolute left-0 top-0 bottom-0 w-1.5 ${
+                  ann.author?.role === 'admin' ? 'bg-brand-gold' : 'bg-brand-green'
+                }`}
+              ></div>
+
+              <div className="flex items-start justify-between gap-3">
+                <div className="flex items-center gap-3">
+                  {/* Circle avatar */}
+                  <div className={`h-8 w-8 rounded-full flex items-center justify-center text-white text-xs font-bold shadow-xs flex-shrink-0 ${
+                    ann.author?.role === 'admin'
+                      ? 'bg-brand-blue'
+                      : 'bg-brand-green'
+                  }`}>
+                    {ann.author
+                      ? `${ann.author.first_name[0]}${ann.author.last_name[0]}`.toUpperCase()
+                      : 'S'}
+                  </div>
+                  <div>
+                    <div className="flex items-center gap-2 flex-wrap">
+                      <span className="text-xs font-bold text-slate-900 leading-none">
+                        {ann.author ? `${ann.author.first_name} ${ann.author.last_name}` : 'Sistema'}
+                      </span>
+                      <span className={`text-[8px] font-extrabold px-2 py-0.5 rounded-full uppercase tracking-wider ${
+                        ann.author?.role === 'admin'
+                          ? 'bg-brand-gold/10 text-brand-gold'
+                          : 'bg-brand-green/10 text-brand-green'
+                      }`}>
+                        {ann.author?.role === 'admin' ? 'Dirección' : 'Docente'}
+                      </span>
+                    </div>
+                    <span className="text-[10px] text-slate-400 mt-1 block">
+                      {new Date(ann.created_at).toLocaleDateString('es-ES', {
+                        day: 'numeric',
+                        month: 'short',
+                        hour: '2-digit',
+                        minute: '2-digit',
+                      })}
+                    </span>
+                  </div>
                 </div>
-                <span className="text-[10px] text-slate-400">
-                  {new Date(ann.created_at).toLocaleDateString('es-ES', {
-                    day: 'numeric',
-                    month: 'short',
-                    hour: '2-digit',
-                    minute: '2-digit',
-                  })}
-                </span>
               </div>
 
               <div className="space-y-1">
-                <h3 className="font-bold text-slate-900 text-sm leading-snug">
+                <h3 className="font-extrabold text-brand-blue text-sm leading-snug">
                   {ann.title}
                 </h3>
-                <p className="text-xs text-slate-650 leading-relaxed whitespace-pre-wrap">
+                <p className="text-xs text-slate-600 leading-relaxed whitespace-pre-wrap">
                   {ann.content}
                 </p>
               </div>

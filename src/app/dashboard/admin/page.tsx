@@ -68,13 +68,13 @@ export default async function AdminDashboardPage() {
           {/* Announcements Card */}
           <Link
             href="/dashboard/admin/announcements"
-            className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-slate-350 transition-all flex flex-col justify-between group"
+            className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-brand-blue/30 transition-all flex flex-col justify-between group"
           >
             <div className="space-y-2">
               <span className="inline-block text-[9px] font-bold text-slate-700 bg-slate-100 px-2 py-0.5 rounded uppercase tracking-wider">
                 Módulo Informativo
               </span>
-              <h2 className="text-lg font-bold text-slate-900 group-hover:text-slate-755 transition-colors">
+              <h2 className="text-lg font-bold text-slate-900 group-hover:text-brand-blue transition-colors">
                 Boletín Oficial
               </h2>
               <p className="text-xs text-slate-500 leading-relaxed">
@@ -92,13 +92,13 @@ export default async function AdminDashboardPage() {
           {/* Appointments Card */}
           <Link
             href="/dashboard/admin/appointments"
-            className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-slate-350 transition-all flex flex-col justify-between group"
+            className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-brand-blue/30 transition-all flex flex-col justify-between group"
           >
             <div className="space-y-2">
               <span className="inline-block text-[9px] font-bold text-slate-700 bg-slate-100 px-2 py-0.5 rounded uppercase tracking-wider">
                 Módulo de Planificación
               </span>
-              <h2 className="text-lg font-bold text-slate-900 group-hover:text-slate-755 transition-colors">
+              <h2 className="text-lg font-bold text-slate-900 group-hover:text-brand-blue transition-colors">
                 Consola General de Citas
               </h2>
               <p className="text-xs text-slate-500 leading-relaxed">
@@ -116,13 +116,13 @@ export default async function AdminDashboardPage() {
           {/* Users Card */}
           <Link
             href="/dashboard/admin/users"
-            className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-slate-350 transition-all flex flex-col justify-between group"
+            className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-brand-blue/30 transition-all flex flex-col justify-between group"
           >
             <div className="space-y-2">
               <span className="inline-block text-[9px] font-bold text-slate-700 bg-slate-100 px-2 py-0.5 rounded uppercase tracking-wider">
                 Control de Cuentas
               </span>
-              <h2 className="text-lg font-bold text-slate-900 group-hover:text-slate-755 transition-colors">
+              <h2 className="text-lg font-bold text-slate-900 group-hover:text-brand-blue transition-colors">
                 Gestión de Usuarios y Roles
               </h2>
               <p className="text-xs text-slate-500 leading-relaxed">
@@ -140,13 +140,13 @@ export default async function AdminDashboardPage() {
           {/* Finance Card */}
           <Link
             href="/dashboard/admin/finance"
-            className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-slate-350 transition-all flex flex-col justify-between group"
+            className="bg-white p-6 rounded-xl border border-slate-200 shadow-sm hover:shadow-md hover:border-brand-blue/30 transition-all flex flex-col justify-between group"
           >
             <div className="space-y-2">
               <span className="inline-block text-[9px] font-bold text-slate-700 bg-slate-100 px-2 py-0.5 rounded uppercase tracking-wider">
                 Módulo Cobros
               </span>
-              <h2 className="text-lg font-bold text-slate-900 group-hover:text-slate-755 transition-colors">
+              <h2 className="text-lg font-bold text-slate-900 group-hover:text-brand-blue transition-colors">
                 Alertas Financieras
               </h2>
               <p className="text-xs text-slate-500 leading-relaxed">

@@ -14,7 +14,7 @@ export default function RepresentativeGradesView({ students }: RepresentativeGra
   if (students.length === 0) {
     return (
       <div className="bg-white p-8 rounded-xl border border-slate-200 shadow-sm text-center text-slate-500 space-y-3">
-        <svg className="h-10 w-10 text-slate-350 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+        <svg className="h-10 w-10 text-slate-400 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
           <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
         </svg>
         <div>
@@ -73,7 +73,7 @@ export default function RepresentativeGradesView({ students }: RepresentativeGra
       <div className="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
         {studentGrades.length === 0 ? (
           <div className="p-8 text-center text-slate-500 space-y-2">
-            <svg className="h-8 w-8 text-slate-350 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+            <svg className="h-8 w-8 text-slate-400 mx-auto" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
               <path strokeLinecap="round" strokeLinejoin="round" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
             </svg>
             <p className="text-sm font-semibold">Aún no hay calificaciones registradas para este período.</p>
