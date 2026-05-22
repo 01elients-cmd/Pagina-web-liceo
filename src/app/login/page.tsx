@@ -17,14 +17,10 @@ export default function LoginPage() {
       <div className="max-w-md w-full space-y-8 bg-white/95 backdrop-blur-md p-10 rounded-3xl border border-white/20 shadow-2xl z-10 animate-fade-in-up">
         <div className="space-y-4">
           <div className="flex justify-center">
-            {/* Elegant Institutional Shield Logo SVG */}
+            {/* Elegant Institutional Shield Logo */}
             <div className="h-16 w-16 rounded-full bg-gradient-to-tr from-brand-blue to-brand-green flex items-center justify-center p-0.5 shadow-lg relative group">
               <div className="h-full w-full bg-white rounded-full flex items-center justify-center overflow-hidden relative">
-                <svg className="h-10 w-10 text-brand-blue" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 14l9-5-9-5-9 5 9 5z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z" />
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 14v6" />
-                </svg>
+                <img src="/logo-liceo.png" alt="Logo U.E. Dr. José María Vargas" className="h-full w-full object-cover" />
               </div>
               <div className="absolute -right-1 -top-1 w-4 h-4 bg-brand-gold rounded-full border border-white flex items-center justify-center shadow-xs">
                 <span className="text-white text-[8px]">★</span>
