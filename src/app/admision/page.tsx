@@ -177,7 +177,7 @@ export default function AdmisionPage() {
                 </div>
               </div>
             </div>
-
+          </div>
           {/* Sección Estudiante (Paso 2) */}
           <div className="space-y-4 bg-slate-50/50 p-5 sm:p-6 rounded-2xl border border-slate-150">
             <div className="flex items-center gap-2.5 border-b border-slate-150/60 pb-3">
