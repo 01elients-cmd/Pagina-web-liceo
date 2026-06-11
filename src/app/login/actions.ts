@@ -38,3 +38,9 @@ export async function login(prevState: any, formData: FormData) {
 
   redirect(`/dashboard/${role}`);
 }
+
+export async function logout() {
+  const supabase = await createClient();
+  await supabase.auth.signOut();
+  redirect('/');
+}
