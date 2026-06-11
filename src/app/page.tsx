@@ -4,7 +4,7 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-[#fcfdfe] text-slate-800 flex flex-col font-sans selection:bg-brand-green selection:text-white">
       {/* Top Banner Bar */}
-      <div className="bg-brand-blue text-white py-2 text-xs font-semibold text-center border-b border-brand-blue-hover/50 px-4">
+      <div className="bg-brand-green text-white py-2 text-xs font-semibold text-center border-b border-brand-green-hover/50 px-4">
         <span>RIF: J-41037200-1 • Código DEA: PD04971705 • Aprobada por el M.P.P.E. • Altagracia, Municipio Gómez, Nueva Esparta</span>
       </div>
 
@@ -12,24 +12,26 @@ export default function HomePage() {
       <header className="bg-white/80 backdrop-blur-md border-b border-slate-100 sticky top-0 z-50 transition-all duration-300">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
           <div className="flex items-center gap-3">
-            {/* Institution Shield Logo */}
-            <div className="h-11 w-11 rounded-full bg-gradient-to-tr from-brand-blue to-brand-green flex items-center justify-center p-0.5 shadow-md">
+            {/* Institution Shield Logo - bigger */}
+            <div className="h-16 w-16 rounded-full bg-gradient-to-tr from-brand-green to-brand-blue flex items-center justify-center p-0.5 shadow-md flex-shrink-0">
               <div className="h-full w-full bg-white rounded-full flex items-center justify-center overflow-hidden relative">
                 <img src="/logo-liceo.png" alt="Logo U.E. Dr. José María Vargas" className="h-full w-full object-cover" />
               </div>
             </div>
             <div>
-              <span className="font-extrabold text-brand-blue tracking-tight text-md block leading-none">U.E. Dr. José María Vargas</span>
-              <span className="text-[10px] text-brand-green font-semibold tracking-wider uppercase block mt-0.5">Altagracia • Nueva Esparta • Desde 2017</span>
+              <span className="font-extrabold text-brand-blue tracking-tight text-base block leading-tight">U.E. Dr. José María Vargas</span>
+              <span className="text-[10px] text-brand-green font-bold tracking-wider block mt-0.5">Academia • Ciencia e Identidad</span>
+              <span className="text-[9px] text-slate-400 font-medium tracking-wide block">Excelencia Educativa al Servicio de la Comunidad</span>
             </div>
           </div>
           
-          <nav className="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-600">
+          <nav className="hidden md:flex items-center space-x-6 text-sm font-semibold text-slate-600">
             <Link href="/" className="text-brand-blue border-b-2 border-brand-green pb-1 px-1">Inicio</Link>
             <Link href="/admision" className="hover:text-brand-green hover:border-b-2 hover:border-brand-green/30 pb-1 px-1 transition-all">Admisión 2026</Link>
-            <Link href="#pilares" className="hover:text-brand-green hover:border-b-2 hover:border-brand-green/30 pb-1 px-1 transition-all">Valores</Link>
+            <Link href="#pilares" className="hover:text-brand-green hover:border-b-2 hover:border-brand-green/30 pb-1 px-1 transition-all">Misión y Visión</Link>
+            <Link href="#galeria" className="hover:text-brand-green hover:border-b-2 hover:border-brand-green/30 pb-1 px-1 transition-all">Galería</Link>
             <Link href="#testimonios" className="hover:text-brand-green hover:border-b-2 hover:border-brand-green/30 pb-1 px-1 transition-all">Comunidad</Link>
-            <Link href="#preguntas" className="hover:text-brand-green hover:border-b-2 hover:border-brand-green/30 pb-1 px-1 transition-all">Preguntas Frecuentes</Link>
+            <Link href="#preguntas" className="hover:text-brand-green hover:border-b-2 hover:border-brand-green/30 pb-1 px-1 transition-all">Preguntas</Link>
           </nav>
 
           <div className="flex items-center gap-3">
@@ -134,7 +136,7 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Pillars Section */}
+        {/* Mision Vision Section */}
         <section id="pilares" className="py-20 bg-slate-50 border-y border-slate-100 relative">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
@@ -142,55 +144,46 @@ export default function HomePage() {
                 Nuestra Propuesta Educativa
               </span>
               <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-blue tracking-tight">
-                Pilares Fundamentales de la Institución
+                Misión, Visión y Valores
               </h2>
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-                Construimos un proceso educativo integral donde la formación académica, la identidad cultural neoespartana y los valores humanos se conjugan para formar ciudadanos comprometidos con Venezuela y Latinoamérica.
+                Formamos ciudadanos integrales con identidad neoespartana, venezolana y latinoamericana, bajo principios académicos, científicos y humanistas.
               </p>
             </div>
-
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {/* Pillar 1 */}
-              <div className="bg-white p-8 rounded-3xl border border-slate-150 shadow-xs hover:shadow-xl hover:-translate-y-1 hover:border-brand-green/20 transition-all duration-300 flex flex-col gap-6 group">
-                <div className="h-14 w-14 rounded-2xl bg-brand-blue/10 flex items-center justify-center text-brand-blue font-bold group-hover:bg-brand-blue group-hover:text-white transition-all duration-300">
-                  <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.168.477 4 1.253m0-13C13.013 5.477 14.597 5 16.3 5s3.168.477 4 1.253v13C19.168 18.477 17.584 18 15.8 18c-1.747 0-3.332.477-4 1.253" />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="font-extrabold text-lg text-brand-blue">Formación Integral</h3>
-                  <p className="mt-3 text-sm text-slate-650 leading-relaxed">
-                    Garantizamos la formación académica en las diferentes áreas del saber, competencias y valores, siempre en la búsqueda de la excelencia, respondiendo a los retos de esta sociedad cambiante.
-                  </p>
-                </div>
-              </div>
-
-              {/* Pillar 2 */}
+              {/* Mision */}
               <div className="bg-white p-8 rounded-3xl border border-slate-150 shadow-xs hover:shadow-xl hover:-translate-y-1 hover:border-brand-green/20 transition-all duration-300 flex flex-col gap-6 group">
                 <div className="h-14 w-14 rounded-2xl bg-brand-green/10 flex items-center justify-center text-brand-green font-bold group-hover:bg-brand-green group-hover:text-white transition-all duration-300">
-                  <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-                  </svg>
+                  <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.168.477 4 1.253m0-13C13.013 5.477 14.597 5 16.3 5s3.168.477 4 1.253v13C19.168 18.477 17.584 18 15.8 18c-1.747 0-3.332.477-4 1.253" /></svg>
                 </div>
                 <div>
-                  <h3 className="font-extrabold text-lg text-brand-blue">Identidad Cultural</h3>
-                  <p className="mt-3 text-sm text-slate-650 leading-relaxed">
-                    Fomentamos el amor por lo neoespartano, venezolano y latinoamericano. Nuestro PEIC 2025-2026 fortalece las costumbres y tradiciones que nos identifican como pueblo, vinculando la escuela con la comunidad de Altagracia.
+                  <h3 className="font-extrabold text-lg text-brand-blue">Misión</h3>
+                  <p className="mt-3 text-sm text-slate-600 leading-relaxed">
+                    Garantizar a niños, niñas y adolescentes una formación integral en las diferentes áreas del saber, competencias y valores, en la búsqueda permanente de la excelencia, en un ambiente de sana convivencia que valore nuestra identidad neoespartana, venezolana y latinoamericana.
                   </p>
                 </div>
               </div>
-
-              {/* Pillar 3 */}
+              {/* Vision */}
               <div className="bg-white p-8 rounded-3xl border border-slate-150 shadow-xs hover:shadow-xl hover:-translate-y-1 hover:border-brand-green/20 transition-all duration-300 flex flex-col gap-6 group">
-                <div className="h-14 w-14 rounded-2xl bg-brand-gold/10 flex items-center justify-center text-brand-gold font-bold group-hover:bg-brand-gold group-hover:text-white transition-all duration-300">
-                  <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                  </svg>
+                <div className="h-14 w-14 rounded-2xl bg-brand-blue/10 flex items-center justify-center text-brand-blue font-bold group-hover:bg-brand-blue group-hover:text-white transition-all duration-300">
+                  <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path strokeLinecap="round" strokeLinejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
                 </div>
                 <div>
-                  <h3 className="font-extrabold text-lg text-brand-blue">Valores y Convivencia</h3>
-                  <p className="mt-3 text-sm text-slate-650 leading-relaxed">
-                    Nuestro Manual de Convivencia, construido en colectivo por estudiantes, docentes, directivos y representantes, establece los lineamientos para una sana convivencia basada en la confianza, el respeto mutuo y la honestidad.
+                  <h3 className="font-extrabold text-lg text-brand-blue">Visión</h3>
+                  <p className="mt-3 text-sm text-slate-600 leading-relaxed">
+                    Ser una institución educativa de referencia en el Estado Nueva Esparta, reconocida por la calidad académica y humana de sus egresados, la sólida vinculación escuela-familia-comunidad y el fomento de la identidad cultural como pilar del nuevo republicano venezolano.
+                  </p>
+                </div>
+              </div>
+              {/* Valores */}
+              <div className="bg-white p-8 rounded-3xl border border-slate-150 shadow-xs hover:shadow-xl hover:-translate-y-1 hover:border-brand-green/20 transition-all duration-300 flex flex-col gap-6 group">
+                <div className="h-14 w-14 rounded-2xl bg-brand-gold/10 flex items-center justify-center text-brand-gold font-bold group-hover:bg-brand-gold group-hover:text-white transition-all duration-300">
+                  <svg className="w-7 h-7" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}><path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+                </div>
+                <div>
+                  <h3 className="font-extrabold text-lg text-brand-blue">Valores Institucionales</h3>
+                  <p className="mt-3 text-sm text-slate-600 leading-relaxed">
+                    <strong className="text-brand-blue">Respeto • Responsabilidad • Honestidad • Solidaridad • Identidad • Excelencia.</strong> Valores construidos en colectivo por estudiantes, docentes, directivos y representantes que guían la convivencia varguense.
                   </p>
                 </div>
               </div>
@@ -266,78 +259,58 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* Testimonials Section */}
+        {/* Gallery Section */}
+        <section id="galeria" className="py-20 bg-slate-50 border-y border-slate-100">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
+              <span className="text-xs font-bold text-brand-green bg-brand-green/10 px-3 py-1 rounded-full uppercase tracking-wider">Galería Institucional</span>
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-blue tracking-tight">Nuestra Comunidad Varguense</h2>
+              <p className="text-slate-600 text-sm leading-relaxed">Conoce los momentos, promociones y actividades que hacen única a nuestra institución.</p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              <div className="bg-gradient-to-br from-brand-green/10 to-brand-blue/10 rounded-2xl h-48 flex flex-col items-center justify-center border border-brand-green/20 gap-3">
+                <span className="text-4xl">🎓</span>
+                <span className="text-sm font-bold text-brand-blue">Primera Promoción</span>
+                <span className="text-xs text-slate-400">Fotos próximamente</span>
+              </div>
+              <div className="bg-gradient-to-br from-brand-gold/10 to-brand-green/10 rounded-2xl h-48 flex flex-col items-center justify-center border border-brand-gold/20 gap-3">
+                <span className="text-4xl">🏫</span>
+                <span className="text-sm font-bold text-brand-blue">Actividades Culturales</span>
+                <span className="text-xs text-slate-400">Fotos próximamente</span>
+              </div>
+              <div className="bg-gradient-to-br from-brand-blue/10 to-brand-gold/10 rounded-2xl h-48 flex flex-col items-center justify-center border border-brand-blue/20 gap-3">
+                <span className="text-4xl">📚</span>
+                <span className="text-sm font-bold text-brand-blue">Vida Académica</span>
+                <span className="text-xs text-slate-400">Fotos próximamente</span>
+              </div>
+            </div>
+            <p className="text-center text-xs text-slate-400 mt-6">Galería en construcción — envía tus fotos institucionales para publicarlas aquí.</p>
+          </div>
+        </section>
+
+        {/* Community Section */}
         <section id="testimonios" className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
-              <span className="text-xs font-bold text-brand-gold bg-brand-gold/10 px-3 py-1 rounded-full uppercase tracking-wider">
-                Voces de Nuestra Comunidad
-              </span>
-              <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-blue tracking-tight">
-                Lo que dicen los Representantes y Alumnos
-              </h2>
-              <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-                Nuestra mayor garantía es el testimonio de quienes conviven a diario en nuestro campus educativo.
-              </p>
+            <div className="text-center max-w-3xl mx-auto mb-12 space-y-4">
+              <span className="text-xs font-bold text-brand-gold bg-brand-gold/10 px-3 py-1 rounded-full uppercase tracking-wider">Nuestra Comunidad</span>
+              <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-blue tracking-tight">El Colectivo Varguense</h2>
+              <p className="text-slate-600 text-sm leading-relaxed">Somos escuela, familia y comunidad. Unidos por la identidad neoespartana y el compromiso con la educación de excelencia.</p>
             </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              {/* Testimonial 1 */}
-              <div className="bg-slate-50/50 p-8 rounded-3xl border border-slate-100 flex flex-col justify-between gap-6 shadow-2xs">
-                <div className="space-y-4">
-                  {/* Rating Stars */}
-                  <div className="flex text-brand-gold text-lg">★★★★★</div>
-                  <p className="text-sm text-slate-600 italic leading-relaxed">
-                    "El portal de control académico ha mejorado muchísimo la comunicación con los docentes. Puedo ver el progreso académico de mi hijo en tiempo real y solicitar citas administrativas sin tener que perder horas."
-                  </p>
-                </div>
-                <div className="flex items-center gap-3.5 pt-4 border-t border-slate-200/60">
-                  <div className="h-10 w-10 rounded-full bg-brand-blue flex items-center justify-center text-white font-bold text-sm">
-                    LP
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-sm text-brand-blue">Luis Pérez G.</h4>
-                    <span className="text-xs text-slate-400 font-medium">Representante (4to Año)</span>
-                  </div>
-                </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div className="bg-brand-green/5 border border-brand-green/15 p-6 rounded-2xl text-center space-y-2">
+                <span className="text-3xl">👨‍🏫</span>
+                <h4 className="font-bold text-brand-blue">Cuerpo Docente</h4>
+                <p className="text-xs text-slate-500 leading-relaxed">Personal directivo, docente, administrativo y ambientalista comprometido con la excelencia varguense.</p>
               </div>
-
-              {/* Testimonial 2 */}
-              <div className="bg-slate-50/50 p-8 rounded-3xl border border-slate-100 flex flex-col justify-between gap-6 shadow-2xs">
-                <div className="space-y-4">
-                  <div className="flex text-brand-gold text-lg">★★★★★</div>
-                  <p className="text-sm text-slate-600 italic leading-relaxed">
-                    "La exigencia científica es real. He aprendido a amar la investigación gracias a los proyectos de laboratorio y al apoyo de mis profesores de biología y física. El ambiente de estudio es genial."
-                  </p>
-                </div>
-                <div className="flex items-center gap-3.5 pt-4 border-t border-slate-200/60">
-                  <div className="h-10 w-10 rounded-full bg-brand-green flex items-center justify-center text-white font-bold text-sm">
-                    MS
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-sm text-brand-blue">María Silva V.</h4>
-                    <span className="text-xs text-slate-400 font-medium">Estudiante de 5to Año</span>
-                  </div>
-                </div>
+              <div className="bg-brand-blue/5 border border-brand-blue/15 p-6 rounded-2xl text-center space-y-2">
+                <span className="text-3xl">👨‍👩‍👧‍👦</span>
+                <h4 className="font-bold text-brand-blue">Familias Varguenses</h4>
+                <p className="text-xs text-slate-500 leading-relaxed">Padres, madres y representantes como aliados fundamentales en el proceso educativo de sus hijos.</p>
               </div>
-
-              {/* Testimonial 3 */}
-              <div className="bg-slate-50/50 p-8 rounded-3xl border border-slate-100 flex flex-col justify-between gap-6 shadow-2xs">
-                <div className="space-y-4">
-                  <div className="flex text-brand-gold text-lg">★★★★★</div>
-                  <p className="text-sm text-slate-600 italic leading-relaxed">
-                    "La formación en valores se nota. No solo se preocupan por que saquen buenas calificaciones, sino por enseñarles a ser ciudadanos educados, respetuosos y comprometidos con el desarrollo del país."
-                  </p>
-                </div>
-                <div className="flex items-center gap-3.5 pt-4 border-t border-slate-200/60">
-                  <div className="h-10 w-10 rounded-full bg-slate-700 flex items-center justify-center text-white font-bold text-sm">
-                    AR
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-sm text-brand-blue">Ana Rodríguez</h4>
-                    <span className="text-xs text-slate-400 font-medium">Representante (1er Año)</span>
-                  </div>
-                </div>
+              <div className="bg-brand-gold/5 border border-brand-gold/15 p-6 rounded-2xl text-center space-y-2">
+                <span className="text-3xl">🌟</span>
+                <h4 className="font-bold text-brand-blue">Estudiantes</h4>
+                <p className="text-xs text-slate-500 leading-relaxed">Jóvenes con identidad, valores y conocimiento, listos para enfrentar los retos de la sociedad moderna.</p>
               </div>
             </div>
           </div>
@@ -407,7 +380,7 @@ export default function HomePage() {
         {/* CTA Banner Section */}
         <section className="py-20 bg-white">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="relative rounded-3xl bg-gradient-to-tr from-brand-blue to-brand-green px-8 py-14 sm:p-16 overflow-hidden shadow-2xl flex flex-col items-center text-center text-white space-y-6">
+            <div className="relative rounded-3xl bg-gradient-to-tr from-brand-green to-brand-blue px-8 py-14 sm:p-16 overflow-hidden shadow-2xl flex flex-col items-center text-center text-white space-y-6">
               {/* Blur Circle background decor */}
               <div className="absolute top-0 right-0 w-80 h-80 bg-white/5 rounded-full filter blur-2xl"></div>
               <div className="absolute bottom-0 left-0 w-80 h-80 bg-brand-gold/10 rounded-full filter blur-2xl"></div>

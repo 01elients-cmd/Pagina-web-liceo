@@ -149,21 +149,34 @@ export default function AdmisionPage() {
                   placeholder="juan.perez@ejemplo.com"
                 />
               </div>
-              <div>
-                <label htmlFor="representative_phone" className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1.5 pl-0.5">
-                  Teléfono de Contacto
-                </label>
-                <input
-                  type="tel"
-                  name="representative_phone"
-                  id="representative_phone"
-                  required
-                  className="appearance-none block w-full px-3 py-2.5 border border-slate-200 placeholder-slate-400 text-slate-900 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-blue/15 focus:border-brand-blue text-sm transition-all bg-white"
-                  placeholder="Ej. 04141234567"
-                />
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label htmlFor="representative_phone" className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1.5 pl-0.5">
+                    Teléfono de Contacto Principal
+                  </label>
+                  <input
+                    type="tel"
+                    name="representative_phone"
+                    id="representative_phone"
+                    required
+                    className="appearance-none block w-full px-3 py-2.5 border border-slate-200 placeholder-slate-400 text-slate-900 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-blue/15 focus:border-brand-blue text-sm transition-all bg-white"
+                    placeholder="Ej. 04141234567"
+                  />
+                </div>
+                <div>
+                  <label htmlFor="representative_phone_alt" className="block text-[10px] font-bold text-slate-500 uppercase tracking-wider mb-1.5 pl-0.5">
+                    Teléfono Secundario (Opcional)
+                  </label>
+                  <input
+                    type="tel"
+                    name="representative_phone_alt"
+                    id="representative_phone_alt"
+                    className="appearance-none block w-full px-3 py-2.5 border border-slate-200 placeholder-slate-400 text-slate-900 rounded-xl focus:outline-none focus:ring-2 focus:ring-brand-blue/15 focus:border-brand-blue text-sm transition-all bg-white"
+                    placeholder="Ej. 04247654321"
+                  />
+                </div>
               </div>
             </div>
-          </div>
 
           {/* Sección Estudiante (Paso 2) */}
           <div className="space-y-4 bg-slate-50/50 p-5 sm:p-6 rounded-2xl border border-slate-150">
