@@ -5,7 +5,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-[#fcfdfe] text-slate-800 flex flex-col font-sans selection:bg-brand-green selection:text-white">
       {/* Top Banner Bar */}
       <div className="bg-brand-blue text-white py-2 text-xs font-semibold text-center border-b border-brand-blue-hover/50 px-4">
-        <span>Rif: J-12345678-9 • Inscrito en el M.P.P.E. • Teléfono: +58 (212) 555-0199</span>
+        <span>RIF: J-41037200-1 • Código DEA: PD04971705 • Aprobada por el M.P.P.E. • Altagracia, Municipio Gómez, Nueva Esparta</span>
       </div>
 
       {/* Header/Navbar with Glassmorphism */}
@@ -20,7 +20,7 @@ export default function HomePage() {
             </div>
             <div>
               <span className="font-extrabold text-brand-blue tracking-tight text-md block leading-none">U.E. Dr. José María Vargas</span>
-              <span className="text-[10px] text-brand-green font-semibold tracking-wider uppercase block mt-0.5">Academia • Ciencia • Identidad</span>
+              <span className="text-[10px] text-brand-green font-semibold tracking-wider uppercase block mt-0.5">Altagracia • Nueva Esparta • Desde 2017</span>
             </div>
           </div>
           
@@ -58,15 +58,15 @@ export default function HomePage() {
               <div className="lg:col-span-7 text-left space-y-8 animate-fade-in-up">
                 <span className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-bold bg-brand-green/10 text-brand-green">
                   <span className="w-2 h-2 rounded-full bg-brand-gold animate-pulse"></span>
-                  Proceso de Preinscripción Abierto 2026 - 2027
+                  Preinscripción Abierta 2025-2026 • Municipio Gómez, Nueva Esparta
                 </span>
                 
                 <h1 className="text-4xl sm:text-6xl font-black text-brand-blue tracking-tight leading-tight">
-                  Formación Académica con <span className="bg-gradient-to-r from-brand-blue via-brand-green to-brand-gold bg-clip-text text-transparent">Propósito y Valores</span>
+                  Identidad, Valores y <span className="bg-gradient-to-r from-brand-blue via-brand-green to-brand-gold bg-clip-text text-transparent">Excelencia Académica</span>
                 </h1>
                 
                 <p className="text-base sm:text-lg text-slate-600 max-w-2xl leading-relaxed">
-                  En la Unidad Educativa Doctor José María Vargas impulsamos la excelencia académica a través de metodologías científicas y herramientas tecnológicas avanzadas, garantizando una educación integral para los retos del mañana.
+                  La Unidad Educativa Doctor José María Vargas, institución privada ubicada en Altagracia, Municipio Gómez del Estado Nueva Esparta, fundada en 2017. Formamos ciudadanos integrales con identidad neoespartana, venezolana y latinoamericana, bajo principios académicos, científicos y humanistas.
                 </p>
 
                 <div className="flex flex-col sm:flex-row items-center gap-4 pt-2">
@@ -114,13 +114,13 @@ export default function HomePage() {
                     
                     {/* Badge */}
                     <div className="absolute top-6 left-6 bg-white/10 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-white/20 text-xs font-bold">
-                      📍 Sede Principal
+                      📍 Altagracia, Nueva Esparta
                     </div>
 
                     <div className="relative space-y-2.5">
-                      <span className="text-brand-gold font-bold text-xs uppercase tracking-wider block">Academia de Alto Nivel</span>
-                      <h3 className="text-2xl font-black leading-tight">Instalaciones preparadas para la investigación y el desarrollo</h3>
-                      <p className="text-xs text-slate-300 leading-relaxed">Laboratorios equipados con tecnología digital para el óptimo aprendizaje en química, física y computación.</p>
+                      <span className="text-brand-gold font-bold text-xs uppercase tracking-wider block">Institución Privada • Desde 2017</span>
+                      <h3 className="text-2xl font-black leading-tight">Formando el nuevo republicano neoespartano con identidad y excelencia</h3>
+                      <p className="text-xs text-slate-300 leading-relaxed">Aprobada por el M.P.P.E. • Código DEA: PD04971705 • RIF: J-41037200-1. Comprometidos con la formación integral escuela-familia-comunidad.</p>
                     </div>
                   </div>
                 </div>
@@ -145,7 +145,7 @@ export default function HomePage() {
                 Pilares Fundamentales de la Institución
               </h2>
               <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
-                Diseñamos un ecosistema pedagógico equilibrado y centrado en el desarrollo de capacidades humanas, científicas e identitarias.
+                Construimos un proceso educativo integral donde la formación académica, la identidad cultural neoespartana y los valores humanos se conjugan para formar ciudadanos comprometidos con Venezuela y Latinoamérica.
               </p>
             </div>
 
@@ -158,9 +158,9 @@ export default function HomePage() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-extrabold text-lg text-brand-blue">Alto Nivel Académico</h3>
+                  <h3 className="font-extrabold text-lg text-brand-blue">Formación Integral</h3>
                   <p className="mt-3 text-sm text-slate-650 leading-relaxed">
-                    Un programa robusto con enfoque científico-humanista, guiado por profesionales dedicados al desarrollo intelectual e inductivo de cada estudiante.
+                    Garantizamos la formación académica en las diferentes áreas del saber, competencias y valores, siempre en la búsqueda de la excelencia, respondiendo a los retos de esta sociedad cambiante.
                   </p>
                 </div>
               </div>
@@ -173,9 +173,9 @@ export default function HomePage() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-extrabold text-lg text-brand-blue">Ecosistema Digital</h3>
+                  <h3 className="font-extrabold text-lg text-brand-blue">Identidad Cultural</h3>
                   <p className="mt-3 text-sm text-slate-650 leading-relaxed">
-                    Biblioteca virtual especializada, control de notas inmediato y comunicación directa por mensajería interna entre representantes, docentes y directivos.
+                    Fomentamos el amor por lo neoespartano, venezolano y latinoamericano. Nuestro PEIC 2025-2026 fortalece las costumbres y tradiciones que nos identifican como pueblo, vinculando la escuela con la comunidad de Altagracia.
                   </p>
                 </div>
               </div>
@@ -188,10 +188,78 @@ export default function HomePage() {
                   </svg>
                 </div>
                 <div>
-                  <h3 className="font-extrabold text-lg text-brand-blue">Valores Institucionales</h3>
+                  <h3 className="font-extrabold text-lg text-brand-blue">Valores y Convivencia</h3>
                   <p className="mt-3 text-sm text-slate-650 leading-relaxed">
-                    Educamos bajo las directrices del legado del Dr. José María Vargas: el respeto al prójimo, el valor del esfuerzo, la ética ciudadana y el compromiso social.
+                    Nuestro Manual de Convivencia, construido en colectivo por estudiantes, docentes, directivos y representantes, establece los lineamientos para una sana convivencia basada en la confianza, el respeto mutuo y la honestidad.
                   </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Epónimo Section */}
+        <section className="py-20 bg-white border-y border-slate-100">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+              <div className="space-y-6">
+                <span className="text-xs font-bold text-brand-gold bg-brand-gold/10 px-3 py-1 rounded-full uppercase tracking-wider">
+                  Nuestro Epónimo
+                </span>
+                <h2 className="text-3xl sm:text-4xl font-extrabold text-brand-blue tracking-tight">
+                  Dr. José María Vargas
+                </h2>
+                <p className="text-slate-600 text-sm sm:text-base leading-relaxed">
+                  Nació el <strong>10 de marzo de 1786</strong> en La Guaira, Venezuela. Médico cirujano, científico, catedrático, rector de la Universidad de Caracas y <strong>primer presidente civil de Venezuela</strong> (1835-1836).
+                </p>
+                <p className="text-slate-600 text-sm leading-relaxed">
+                  Su presidencia es recordada como un hito civilista: promulgó el Primer Código de la República, organizó el Registro Público y reformó la enseñanza primaria y superior. Su legado de servicio, ética y amor por la educación es el norte que guía a nuestra comunidad educativa.
+                </p>
+                <div className="grid grid-cols-2 gap-4 pt-2">
+                  <div className="bg-brand-blue/5 p-4 rounded-2xl border border-brand-blue/10">
+                    <span className="block text-xl font-extrabold text-brand-blue">1786</span>
+                    <span className="block text-xs font-semibold text-slate-500 mt-1">Año de Nacimiento</span>
+                  </div>
+                  <div className="bg-brand-green/5 p-4 rounded-2xl border border-brand-green/10">
+                    <span className="block text-xl font-extrabold text-brand-green">1835</span>
+                    <span className="block text-xs font-semibold text-slate-500 mt-1">Primer Pdte. Civil</span>
+                  </div>
+                  <div className="bg-brand-gold/5 p-4 rounded-2xl border border-brand-gold/10">
+                    <span className="block text-xl font-extrabold text-brand-gold">2017</span>
+                    <span className="block text-xs font-semibold text-slate-500 mt-1">Fundación de la U.E.</span>
+                  </div>
+                  <div className="bg-slate-50 p-4 rounded-2xl border border-slate-100">
+                    <span className="block text-xl font-extrabold text-slate-700">NE</span>
+                    <span className="block text-xs font-semibold text-slate-500 mt-1">Nueva Esparta</span>
+                  </div>
+                </div>
+              </div>
+              <div className="relative">
+                <div className="bg-gradient-to-tr from-brand-blue/10 to-brand-gold/10 rounded-3xl p-8 border border-brand-blue/10 space-y-5">
+                  <div className="flex items-start gap-4">
+                    <div className="h-10 w-10 flex-shrink-0 rounded-xl bg-brand-blue flex items-center justify-center text-white text-lg">⚕️</div>
+                    <div>
+                      <h4 className="font-bold text-brand-blue text-sm">Médico y Científico</h4>
+                      <p className="text-xs text-slate-600 mt-1 leading-relaxed">Estudió medicina, cirugía, química, botánica y anatomía en Caracas y Edimburgo. Miembro del Real Colegio de Cirujanos de Londres.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="h-10 w-10 flex-shrink-0 rounded-xl bg-brand-green flex items-center justify-center text-white text-lg">📚</div>
+                    <div>
+                      <h4 className="font-bold text-brand-blue text-sm">Educador y Rector</h4>
+                      <p className="text-xs text-slate-600 mt-1 leading-relaxed">Profesor de Anatomía y Rector de la Universidad de Caracas. Introdujo reformas históricas en la educación venezolana.</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-4">
+                    <div className="h-10 w-10 flex-shrink-0 rounded-xl bg-brand-gold flex items-center justify-center text-white text-lg">🏛️</div>
+                    <div>
+                      <h4 className="font-bold text-brand-blue text-sm">Estadista Civilista</h4>
+                      <p className="text-xs text-slate-600 mt-1 leading-relaxed">Presidente electo en 1835, símbolo del civismo venezolano. Promulgó el Primer Código de la República y reformó el sistema educativo nacional.</p>
+                    </div>
+                  </div>
+                  <div className="mt-4 pt-4 border-t border-brand-blue/10 text-center">
+                    <p className="text-xs text-slate-500 italic">&ldquo;Su legado de conocimiento, ética y servicio público es el faro que ilumina nuestra misión educativa en Altagracia.&rdquo;</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -345,10 +413,10 @@ export default function HomePage() {
               <div className="absolute bottom-0 left-0 w-80 h-80 bg-brand-gold/10 rounded-full filter blur-2xl"></div>
 
               <h2 className="text-3xl sm:text-5xl font-black tracking-tight relative max-w-2xl">
-                Comienza tu camino hacia una educación de excelencia
+                Asegura el cupo de tu hijo en la U.E. Dr. José María Vargas
               </h2>
               <p className="text-xs sm:text-sm text-slate-200 max-w-lg relative leading-relaxed">
-                El proceso de preinscripción online solo toma unos minutos. Registra los datos de tu representado y asegura su cupo para el periodo escolar 2026.
+                El proceso de preinscripción online solo toma unos minutos. Asegura el cupo de tu representado para el periodo escolar 2025-2026 en Altagracia, Municipio Gómez, Nueva Esparta.
               </p>
               <div className="pt-4 relative w-full sm:w-auto">
                 <Link 
@@ -396,9 +464,10 @@ export default function HomePage() {
           <div>
             <h4 className="font-bold text-white text-sm mb-4">Contacto Institucional</h4>
             <p className="leading-relaxed">
-              Av. Principal con Calle Los Colegios, Sede Vargas.<br />
-              Caracas, Venezuela.<br />
-              Email: <span className="text-white hover:underline cursor-pointer">contacto@vargas.edu.ve</span>
+              Altagracia, Municipio Gómez,<br />
+              Estado Nueva Esparta, Venezuela.<br />
+              RIF: J-41037200-1<br />
+              Código DEA: PD04971705
             </p>
           </div>
         </div>
